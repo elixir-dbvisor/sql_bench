@@ -3,7 +3,7 @@
 
 import Config
 
-size = 10
+size = :erlang.system_info(:schedulers)
 
 config :sql,
 env: config_env(),
